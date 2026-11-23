@@ -1,0 +1,23 @@
+# Code-only repo: ignore everything by default, then allow-list
+# back in just source code, notebooks, and minimal project docs.
+# No data files, images, archives, logs, or generated artifacts.
+
+*
+
+# Allow traversing into directories so files inside can be checked
+!*/
+
+# Source code / notebooks
+!*.py
+!*.ipynb
+!*.js
+!*.css
+!*.html
+!*.yaml
+!*.yml
+
+# Minimal project docs/config needed to run the code
+!requirements.txt
+!README.md
+!PROGRESS.md
+!.gitignore
